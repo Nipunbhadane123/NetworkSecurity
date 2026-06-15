@@ -1,0 +1,31 @@
+[ 2026-06-14 21:23:16,867 ] 22 root - INFO - Initiate the data ingestion
+[ 2026-06-14 21:23:23,079 ] 67 root - INFO - Performed train test split on the dataframe
+[ 2026-06-14 21:23:23,080 ] 69 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2026-06-14 21:23:23,081 ] 77 root - INFO - Exporting train and test file path.
+[ 2026-06-14 21:23:23,500 ] 86 root - INFO - Exported train and test file path.
+[ 2026-06-14 21:23:23,585 ] 24 root - INFO - Data Initiation Completed
+[ 2026-06-14 21:23:24,178 ] 28 root - INFO - Initiate the data Validation
+[ 2026-06-14 21:23:24,314 ] 32 root - INFO - Required number of columns:2
+[ 2026-06-14 21:23:24,314 ] 33 root - INFO - Data frame has columns:31
+[ 2026-06-14 21:23:24,315 ] 32 root - INFO - Required number of columns:2
+[ 2026-06-14 21:23:24,315 ] 33 root - INFO - Data frame has columns:31
+[ 2026-06-14 21:23:24,646 ] 30 root - INFO - data Validation Completed
+[ 2026-06-14 21:23:24,647 ] 33 root - INFO - data Transformation started
+[ 2026-06-14 21:23:24,647 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2026-06-14 21:23:24,647 ] 65 root - INFO - Starting data transformation
+[ 2026-06-14 21:23:24,692 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2026-06-14 21:23:24,693 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-06-14 21:23:24,726 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-14 21:23:24,772 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-14 21:23:24,772 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-14 21:23:24,777 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-14 21:23:24,779 ] 37 root - INFO - data Transformation completed
+[ 2026-06-14 21:23:24,780 ] 39 root - INFO - Model Training sstared
+[ 2026-06-14 21:30:15,985 ] 130 root - WARNING - Failed to track train metric in MLflow: 'RandomForestClassifier' object has no attribute 'strip'
+[ 2026-06-14 21:30:37,386 ] 139 root - WARNING - Failed to track test metric in MLflow: 'RandomForestClassifier' object has no attribute 'strip'
+[ 2026-06-14 21:30:37,452 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-14 21:30:37,475 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-14 21:30:37,475 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-14 21:30:37,502 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-14 21:30:37,502 ] 157 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\06_14_2026_21_22_48\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9913731858317264, precision_score=0.9904684648144393, recall_score=0.9922795611540024), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9725806451612903, precision_score=0.9686746987951808, recall_score=0.9765182186234818))
+[ 2026-06-14 21:30:37,505 ] 44 root - INFO - Model Training artifact created

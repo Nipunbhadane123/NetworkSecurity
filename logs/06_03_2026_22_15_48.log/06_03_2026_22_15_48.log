@@ -1,0 +1,33 @@
+[ 2026-06-03 22:16:05,028 ] 22 root - INFO - Initiate the data ingestion
+[ 2026-06-03 22:16:14,720 ] 67 root - INFO - Performed train test split on the dataframe
+[ 2026-06-03 22:16:14,721 ] 69 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2026-06-03 22:16:14,827 ] 77 root - INFO - Exporting train and test file path.
+[ 2026-06-03 22:16:15,327 ] 86 root - INFO - Exported train and test file path.
+[ 2026-06-03 22:16:15,334 ] 24 root - INFO - Data Initiation Completed
+[ 2026-06-03 22:16:15,368 ] 28 root - INFO - Initiate the data Validation
+[ 2026-06-03 22:16:15,506 ] 32 root - INFO - Required number of columns:2
+[ 2026-06-03 22:16:15,507 ] 33 root - INFO - Data frame has columns:31
+[ 2026-06-03 22:16:15,509 ] 32 root - INFO - Required number of columns:2
+[ 2026-06-03 22:16:15,509 ] 33 root - INFO - Data frame has columns:31
+[ 2026-06-03 22:16:16,055 ] 30 root - INFO - data Validation Completed
+[ 2026-06-03 22:16:16,055 ] 33 root - INFO - data Transformation started
+[ 2026-06-03 22:16:16,056 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2026-06-03 22:16:16,056 ] 65 root - INFO - Starting data transformation
+[ 2026-06-03 22:16:16,129 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2026-06-03 22:16:16,130 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-06-03 22:16:16,159 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-03 22:16:16,165 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-03 22:16:16,165 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-03 22:16:16,171 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-03 22:16:16,180 ] 37 root - INFO - data Transformation completed
+[ 2026-06-03 22:16:16,180 ] 39 root - INFO - Model Training sstared
+[ 2026-06-03 22:22:17,612 ] 130 root - WARNING - Failed to track train metric in MLflow: 403: You have reached the limit of 100 experiments for a private repository in the free plan.
+Please upgrade to the Team plan to increase the limit at https://dagshub.com/pricing?repo_id=52439
+[ 2026-06-03 22:22:18,071 ] 139 root - WARNING - Failed to track test metric in MLflow: 403: You have reached the limit of 100 experiments for a private repository in the free plan.
+Please upgrade to the Team plan to increase the limit at https://dagshub.com/pricing?repo_id=52439
+[ 2026-06-03 22:22:19,872 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-03 22:22:19,993 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-03 22:22:19,994 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-03 22:22:20,060 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-03 22:22:20,060 ] 157 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\06_03_2026_22_15_50\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9916970433373835, precision_score=0.9898928643622398, recall_score=0.9935078109149929), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9789132197891321, precision_score=0.9749596122778675, recall_score=0.9828990228013029))
+[ 2026-06-03 22:22:20,064 ] 44 root - INFO - Model Training artifact created
